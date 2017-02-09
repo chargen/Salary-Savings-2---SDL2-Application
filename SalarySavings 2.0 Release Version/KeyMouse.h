@@ -1,0 +1,21 @@
+#ifndef KEYMOUSE_H
+#define KEYMOUSE_H
+/////////////////////////////////////////////////////////////////////////////
+// KeyMouse.h																   
+// MaxiJonson															   
+// December 22 2016														   
+// Groups functions that use both the Keyboard and Mouse module					   	
+/////////////////////////////////////////////////////////////////////////////
+#include "Keyboard.h"
+#include "Mouse.h"
+
+///////////////////////////////////////////////////////////////////////////////
+// PollMouseAndKeyboard
+// Polls both the mouse and keyboard in case your event can take either
+// Params : Mouse
+//			Zone to check
+// Returns: in the zone or not
+///////////////////////////////////////////////////////////////////////////////
+void PollMouseAndKeyboard(Mouse& mouse, KEvent& key);
+
+#endif // !KEYMOUSE_H
